@@ -1,0 +1,5 @@
+/* Reset App.css since we use specific page CSS */
+.App {
+  width: 100%;
+  min-height: 100vh;
+}

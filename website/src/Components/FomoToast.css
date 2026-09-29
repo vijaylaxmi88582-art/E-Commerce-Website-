@@ -1,0 +1,85 @@
+.fomo-container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.fomo-toast {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  max-width: 320px;
+}
+
+.fomo-icon {
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+.fomo-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.fomo-title {
+  font-size: 13px;
+  color: #475569;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.fomo-title strong {
+  color: #0f172a;
+}
+
+.fomo-product {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.fomo-stars {
+  font-size: 12px;
+  margin: 0 0 2px 0;
+}
+
+.fomo-time {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .fomo-container {
+    bottom: 110px; /* Above special offer if mobile */
+    left: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .fomo-toast {
+    width: 100%;
+    max-width: 100%;
+  }
+}
